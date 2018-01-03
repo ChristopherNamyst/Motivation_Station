@@ -7,7 +7,10 @@ class SignUp extends Component {
     super(props);
     this.state ={
       email:'',
-      password:''
+      password:'',
+      error: {
+        message: ''
+      }
     }
   }
 
@@ -50,7 +53,7 @@ class SignUp extends Component {
               Sign Up
             </button>
         </div>
-        <div>{this.state.error}</div>
+        <div>{this.state.error.message}</div>
       </div>
     )
   }
